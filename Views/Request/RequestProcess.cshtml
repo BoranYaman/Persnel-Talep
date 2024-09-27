@@ -1,0 +1,98 @@
+@model UserOperations.Entity.Request
+
+
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    Talep Detayları
+                </div>
+                <form asp-controller="Request" asp-action="RequestProcess" method="post">
+                <input type="hidden" asp-for="Id">
+                <div class="card-body">
+                    <div class="form-group">
+                        <label asp-for="RUserName">Talep Yapan</label>
+                        <input asp-for="RUserName" type="text" class="form-control"  readonly>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="DDepartment">Departman</label>
+                        <input asp-for="DDepartment" type="text" class="form-control" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="EMail">Personel Mail Adresi</label>
+                        <input asp-for="EMail" type="text" class="form-control" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="RequestTitle">Konu</label>
+                        <input asp-for="RequestTitle" type="text" class="form-control" readonly>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label asp-for="RequestText">Talebi</label>
+                        <textarea asp-for="RequestText" class="form-control"  rows="3" readonly>
+
+                        </textarea>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Status">Durum</label>
+                        <select asp-for="Status" class="form-select">
+                            <option value="Yeni Talep">Yeni Talep</option>
+                            <option value="Isleme Alinan">Isleme Alinan</option>
+                            <option value="Sonuçlandı">Sonuçlandı</option>
+                        </select>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label for="comments">Yapılan İşlem</label>
+                        <textarea class="form-control" id="comments" name="comments" rows="4" placeholder="Yorumlarınızı buraya yazın..."></textarea>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <button type="submit" class="btn btn-success">Talebi Güncelle</button>
+                    </div>
+                </div>
+            </form>
+
+            <h3>Yapılan İşlemler</h3>
+            @if (Model.Processes != null && Model.Processes.Any())
+            {
+                <div class="accordion" id="processAccordion">
+                @foreach (var process in Model.Processes)
+                {
+                    <div class="card mb-3">
+                        <div class="card-header" id="heading-@process.Id">
+                            <h5 class="mb-0">
+                                <button style="text-decoration: none; color: black;font-size: 18px;" class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-@process.Id" aria-expanded="true" aria-controls="collapse-@process.Id">
+                                    <strong>@process.ProcessDate.ToShortDateString() :</strong> İşlem Detayı +
+                                </button>
+                            </h5>
+                        </div>
+            
+                        <div id="collapse-@process.Id" class="collapse" aria-labelledby="heading-@process.Id" data-parent="#processAccordion">
+                            <div class="card-body">
+                                <h4 style="font-size: 18px;">Adı: @process.UserName</h4>
+
+                                <h4 style="font-size: 18px;">Mail Adresi: @process.UserMail</h4>
+                                <p>@process.ProcessDetail</p>
+                            </div>
+                        </div>
+                    </div>
+                }
+                </div>
+            }
+            else
+            {
+                <div class="alert alert-info" role="alert">
+                    Henüz bu talep için yapılmış bir işlem yok.
+                </div>
+            }
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+

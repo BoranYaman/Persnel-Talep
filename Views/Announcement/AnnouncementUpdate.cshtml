@@ -1,0 +1,80 @@
+@model UserOperations.Entity.Announcement
+<style>
+  body {
+    background-color: #f4f6f9;
+    font-family: Arial, sans-serif;
+  }
+  .form-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .form-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  .form-group label {
+    font-weight: bold;
+    color: #555;
+  }
+  .form-control, .form-select {
+    border-radius: 5px;
+  }
+  .btn-custom {
+    background-color: #007bff;
+    color: white;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .btn-custom:hover {
+    background-color: #0056b3;
+  }
+</style>
+
+<div class="container">
+  <div class="form-container">
+    <h3 class="form-header">Duyuru Formu</h3>
+    <form asp-controller="Announcement" asp-action="AnnouncementUpdate" method="post">
+        <input type="hidden" asp-for="Id">
+      
+      
+      <div class="form-group mb-3">
+        <label asp-for="AnnouncementTitle">Duyuru Başlığı</label>
+        <input asp-for="AnnouncementTitle" type="text"  class="form-control" placeholder="Duyuru başlığını girin" required>
+      </div>
+      
+    
+      <div class="form-group mb-3">
+        <label asp-for="AnnouncementText">Departman</label>
+        <textarea asp-for="AnnouncementText" class="form-control" rows="5" placeholder="Duyuru metnini girin" required></textarea>
+      </div>
+      <div class="form-group mb-3">
+          <label asp-for="DataTime">Tarih</label>
+          <input asp-for="DataTime" type="date"  class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label asp-for="Situation">Departman</label>
+            <select asp-for="Situation" class="form-select">
+                  <option>Yayında</option>
+                  <option>Yayında Değil</option>
+         </select>
+          </div>
+
+      <button type="submit" class="btn btn-custom">Gönder</button>
+    </form>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>

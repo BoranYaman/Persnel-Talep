@@ -1,0 +1,183 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = UserOperations
+build_property.RootNamespace = UserOperations
+build_property.ProjectDir = C:\Users\boran\OneDrive\Masaüstü\Boran Yaman Belgeler\Web Programlama\Asp.net-7\UserOperations\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\boran\OneDrive\Masaüstü\Boran Yaman Belgeler\Web Programlama\Asp.net-7\UserOperations
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/AdministrativeAffairs/AddACar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpdmVBZmZhaXJzXEFkZEFDYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/AdministrativeAffairs/administrativeAffairsController.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpdmVBZmZhaXJzXGFkbWluaXN0cmF0aXZlQWZmYWlyc0NvbnRyb2xsZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/AdministrativeAffairs/CarDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpdmVBZmZhaXJzXENhckRlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/AdministrativeAffairs/CarDelivery.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpdmVBZmZhaXJzXENhckRlbGl2ZXJ5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/AdministrativeAffairs/CarEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpdmVBZmZhaXJzXENhckVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/AdministrativeAffairs/CarTransactions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpdmVBZmZhaXJzXENhclRyYW5zYWN0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/Announcement/AnnouncementCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5ub3VuY2VtZW50XEFubm91bmNlbWVudENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/Announcement/AnnouncementDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5ub3VuY2VtZW50XEFubm91bmNlbWVudERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/Announcement/AnnouncementUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5ub3VuY2VtZW50XEFubm91bmNlbWVudFVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/Announcement/MyAnnouncement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5ub3VuY2VtZW50XE15QW5ub3VuY2VtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/ControllerRouting/Controller.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udHJvbGxlclJvdXRpbmdcQ29udHJvbGxlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/Home/Eror.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/HumanResources/humanResourcesController.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHVtYW5SZXNvdXJjZXNcaHVtYW5SZXNvdXJjZXNDb250cm9sbGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/HumanResources/PersonnelExit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHVtYW5SZXNvdXJjZXNcUGVyc29ubmVsRXhpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/HumanResources/PersonnelExitt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHVtYW5SZXNvdXJjZXNcUGVyc29ubmVsRXhpdHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/Request/FinalRequest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWVzdFxGaW5hbFJlcXVlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/Request/MyRequest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWVzdFxNeVJlcXVlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/Request/MyRequestDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWVzdFxNeVJlcXVlc3REZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/Request/RequestCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWVzdFxSZXF1ZXN0Q3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/Request/RequestDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWVzdFxSZXF1ZXN0RGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/Request/RequestList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWVzdFxSZXF1ZXN0TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/Request/RequestProcess.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWVzdFxSZXF1ZXN0UHJvY2Vzcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/Roles/RoleCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcUm9sZUNyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/Roles/RoleDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcUm9sZURlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/Roles/RoleEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcUm9sZUVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/Roles/RoleList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcUm9sZUxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/User/ITController.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJVENvbnRyb2xsZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/User/MyAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxNeUFjY291bnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/User/UserCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/User/UserDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/User/UserDeleteForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyRGVsZXRlRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/User/UserEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/User/UserUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/boran/OneDrive/Masaüstü/Boran Yaman Belgeler/Web Programlama/Asp.net-7/UserOperations/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-gqmzytcchr

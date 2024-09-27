@@ -1,0 +1,83 @@
+@model IEnumerable<AppRole>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .custom-table {
+        border-collapse: separate;
+        border-spacing: 0 10px;
+      }
+      .custom-table thead th {
+        background-color: #343a40;
+        color: white;
+        border: none;
+      }
+      .custom-table tbody tr {
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .custom-table tbody tr:hover {
+        background-color: #f8f9fa;
+      }
+      .custom-table th, .custom-table td {
+        padding: 1rem;
+        border-top: none;
+      }
+    </style>
+ 
+    <div class="container mt-5">
+      <table class="table custom-table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Role Adı</th>
+            <th scope="col">Kullanıcı Bilgisi</th>
+            <th scope="col">İşlem Bilgisi</th>
+          </tr>
+        </thead>
+        <tbody>
+          @foreach(var role in Model)
+          {
+              <tr>
+                  <td>@role.Id</td>
+                  <td>@role.Name</td>
+                  <td asp-role-users="@role.Id" ></td>
+                  <td>
+                    <form asp-action="RoleDelete" method="post">
+                      <a asp-action="RoleEdit" asp-route-id="@role.Id" class="btn btn-primary btn-sm">Edit</a>
+                      <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-@role.Id">
+                          Sil
+                      </button>
+                      <div class="modal fade" id="modal-@role.Id" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLabel-@role.Id" aria-hidden="true">
+                          <div class="modal-dialog">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h1 class="modal-title fs-5" id="modalLabel-@role.Id">Role Silme</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                      Role Adı: @role.Name
+                                      <br>
+                                      Bilgilerine Sahip Roleyi Silmek İstediğinize Emin Misiniz?
+                                  </div>
+                                  <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">İptal</button>
+                                      <form asp-action="RoleDelete" method="post">
+                                          <input type="hidden" name="id" value="@role.Id">
+                                          <button type="submit" class="btn btn-danger">Sil</button>
+                                      </form>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </form>
+                  </td>
+              </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  
+  

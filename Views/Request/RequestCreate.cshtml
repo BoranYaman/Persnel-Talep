@@ -1,0 +1,75 @@
+
+  @model UserOperations.Entity.Request
+  <style>
+    body {
+      background-color: #f4f6f9;
+      font-family: Arial, sans-serif;
+    }
+    .form-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .form-header {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+    .form-group {
+      margin-bottom: 1rem;
+    }
+    .form-group label {
+      font-weight: bold;
+      color: #555;
+    }
+    .form-control, .form-select {
+      border-radius: 5px;
+    }
+    .btn-custom {
+      background-color: #007bff;
+      color: white;
+      width: 100%;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn-custom:hover {
+      background-color: #0056b3;
+    }
+  </style>
+
+  <div class="container">
+    <div class="form-container">
+      <h3 class="form-header">Talep Formu</h3>
+      <form action="RequestCreate" method="post">
+        <div class="form-group mb-3">
+          <label asp-for="UDepartment">İlgili Departmanı Seçin</label>
+          <select asp-for="UDepartment"  class="form-select" required>
+            <option value="">Departman Seçin</option>
+            <option value="Muhasebe">Muhasebe</option>
+            <option value="Insan Kaynakları">İnsan Kaynakları</option>
+            <option value="Bilgi İşlem">Bilgi İşlem</option>
+            <option value="İdari İşler">İdari İşler</option>
+          </select>
+        </div>
+        <div class="form-group mb-3">
+          <label asp-for="RequestTitle">Konu Başlığı</label>
+          <input asp-for="RequestTitle" type="text"  class="form-control" placeholder="Konu Başlığı" >
+        </div>
+        <div class="form-group mb-3">
+          <label asp-for="RequestText">Konu</label>
+          <textarea asp-for="RequestText"  class="form-control" rows="5" placeholder="Talebinizin detaylarını yazın" ></textarea>
+        </div>
+        <button type="submit" class="btn btn-custom">Gönder</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+

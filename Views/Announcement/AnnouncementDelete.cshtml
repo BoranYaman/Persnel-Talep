@@ -1,0 +1,91 @@
+@model UserOperations.Entity.Announcement
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .announcement-list {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .announcement-list h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    .announcement-item {
+        border-bottom: 1px solid #ddd;
+        padding: 15px 0;
+    }
+
+    .announcement-header h3 {
+        margin: 0;
+        color: #007BFF;
+    }
+
+    .announcement-header p {
+        margin: 5px 0;
+        color: #555;
+    }
+
+    .announcement-body p {
+        margin: 10px 0 0;
+        color: #333;
+    }
+
+    .announcement-item:last-child {
+        border-bottom: none;
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;
+    }
+
+    .pagination a {
+        color: #007BFF;
+        padding: 8px 16px;
+        text-decoration: none;
+        margin: 0 4px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+    }
+
+    .pagination a.active {
+        background-color: #007BFF;
+        color: white;
+        border: 1px solid #007BFF;
+    }
+</style>
+
+<div class="announcement-list">
+    <h2>Silinmek istenen Duyuru</h2>
+    <div class="announcement-container">
+        <div class="announcement-item">
+            <div class="announcement-header">
+                <h3>Duyuru Başlığı: @Model.AnnouncementTitle</h3>
+                <p><strong>Birim:</strong>@Model.AnnouncementDepartment</p>
+                <p><strong>Yapan Kişi:</strong> @Model.ThePublisher</p>
+                <p><strong>Tarih:</strong> @Model.DataTime</p>
+            </div>
+            <div class="announcement-body">
+                <p>@Model.AnnouncementText</p>
+            </div>
+        </div>
+    </div>
+
+    <form asp-action="AnnouncementDelete" method="post">
+        <input type="hidden" value="@Model.Id" name="Id">
+        <button type="submit" class="btn btn-danger">Evet</button>
+        <a asp-controller="Announcement" asp-action="MyAnnouncement" class="btn btn-secondary">Hayır</a>
+    </form>
+</div>

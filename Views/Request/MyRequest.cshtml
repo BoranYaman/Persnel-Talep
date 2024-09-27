@@ -1,0 +1,75 @@
+@model UserOperations.ViewModels.RequestViewModel
+<style>
+    .scrollable {
+        max-height: 800px;
+        overflow-y: auto;
+    }
+    .status-badge {
+        text-align: center;
+        background-color: green;
+        width: 7em;
+        color: aliceblue;
+        border-radius: 10px;
+        float: right;
+    }
+    .card-body {
+        margin-bottom: 15px;
+    }
+</style>
+
+<div class="col-md-10" style="margin-left: auto;margin-right: auto;">
+    <div class="card">
+        <div class="card-header bg-success text-white">
+             Talepler Durumları
+        </div>
+        <div class="card-body scrollable">
+         
+                @foreach (var request in Model.MyRequests)
+                {
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <p class="status-badge" style="background-color: blue;">@request.Status</p>
+                            <h5 class="card-title">Talep</h5>
+                            <p class="card-text"><strong>Departman:</strong> @request.DDepartment</p>
+                            <p class="card-text"><strong>Konu:</strong> @request.RequestTitle</p>
+                            <p class="card-text"><strong>Gönderen:</strong>@request.RUserName</p>
+                           <a asp-controller="Request" asp-action="MyRequestDetails" asp-route-id="@request.Id">  <button class="btn btn-primary">Talep Detayı</button></a>
+                           <td>
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-@request.Id">
+                              Sil
+                            </button>
+          
+                            <div class="modal fade" id="modal-@request.Id" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLabel-@request.Id" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="modalLabel-@request.Id">Talep Silme</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    Talep Konusu: @request.RequestTitle
+                                    <br>
+                                    Talep Yazısı: @request.RequestText
+                                    <br>
+                                   
+                                    <br>
+                                    Bilgilerine Sahip Talebi Silmek İstediğinize Emin Misiniz?
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">İptal</button>
+                                    <form asp-action="RequestDelete" method="post">
+                                      <input type="hidden" value="@request.Id" name="id">
+                                      <button type="submit" class="btn btn-danger">Sil</button>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </div>
+                    </div>
+                }
+            
+         
+        </div>
+    </div>

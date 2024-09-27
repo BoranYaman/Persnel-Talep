@@ -1,0 +1,54 @@
+@model IEnumerable<UserOperations.Entity.Car>
+
+    <h2 class="mb-4">Kayıtlı Araçlar</h2>
+    
+    <div class="container col-sm-13">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                Araç Listesi
+            </div>
+            <div class="card-body">
+                <table class="table table-hover table-bordered">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>#</th>
+                            <th>Araç Modeli</th>
+                            <th>Plaka</th>
+                            <th>Vites Türü</th>
+                            <th>Kilometre</th>
+                            <th>Araba Durumu</th>
+                            <th>İşlemler</th> 
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.Any())
+                        {
+                            @foreach (var car in Model)
+                            {
+                                <tr>
+                                    <td>@car.Id</td>
+                                    <td>@car.CarModel</td>
+                                    <td>@car.CarPlate</td>
+                                    <td>@car.Gearbox</td>
+                                    <td>@car.YKM</td>
+                                    <td>@car.CarStatus</td>
+
+                                    <td><a asp-controller=""><button class="btn btn-primary">İşlem Yap</button></a></td>
+                                 
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td colspan="6" class="text-center">Kayıtlı araç bulunmamaktadır.</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    

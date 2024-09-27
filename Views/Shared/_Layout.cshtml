@@ -1,0 +1,133 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+  </svg>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - UserOperations</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/UserOperations.styles.css" asp-append-version="true" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/bootstrap-extended.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    
+   
+    
+
+</head>
+<style>
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  .navbar-nav .nav-item .nav-link {
+    color: black;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+  }
+  .navbar-nav .nav-item .nav-link:hover {
+    color: black;
+  }
+  .offcanvas-header {
+    border-bottom: 1px solid #444;
+  }
+  .offcanvas-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .offcanvas-body {
+    padding: 1rem;
+  }
+  .nav-item {
+    margin-bottom: 1rem;
+  }
+  .nav-item a {
+    color: black;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+</style>
+<body>
+    <header>
+      @if(User.Identity.IsAuthenticated == true)
+      {  
+      <nav class="navbar navbar-dark bg-dark fixed-top">
+
+        <div class="container-fluid">
+          
+          <a class="navbar-brand" asp-controller="Home" asp-action="Index">BizBiZe</a>
+        <p style="color:aliceblue;font-size: large;margin-left: 60%;">Merhaba, @User.Identity.Name</p>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">İşlemler</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" asp-controller="ControllerRouting" asp-action="Controller">Kontrol Paneli</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" asp-rouite asp-controller="User" asp-action="MyAccount">Hesabım</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" asp-rouite asp-controller="Announcement" asp-action="MyAnnouncement">Duyurularım</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" asp-rouite asp-controller="Request" asp-action="MyRequest">Taleplerim</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" asp-controller="Account" asp-action="Logout">Çıkış</a>
+                </li>
+              </ul>
+            </div>ben
+          </div>
+        </div>
+        
+      </nav>
+    }
+    else
+    {
+      <nav class="navbar navbar-dark bg-dark fixed-top" style="height: 7.8%;">
+        <div class="container-fluid">
+          <a class="navbar-brand" asp-controller="Home" asp-action="Index" style="margin-top: -2.5%;">Şirket Adı</a>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link" asp-controller="Account" asp-action="Login" style="background-color:forestgreen;">
+              <i class="fas fa-user mx-1" style="color: #fff;font-size: large;"></i> Giriş
+            </a>
+          </li>
+        </div>
+      </nav>
+    }
+    </header>
+    <div class="container" style="margin-top: 5%;">
+        <main role="main" class="pb-3">
+
+            @RenderBody()
+        </main>
+    </div>
+
+   
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

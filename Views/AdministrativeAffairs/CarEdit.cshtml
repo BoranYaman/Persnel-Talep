@@ -1,0 +1,48 @@
+@model UserOperations.Entity.Car
+
+<form asp-action="CarEdit" method="post">
+    <div class="form-group">
+        <label asp-for="CarModel" class="control-label">Araç Modeli</label>
+        <input asp-for="CarModel" class="form-control" />
+        <span asp-validation-for="CarModel" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CarPlate" class="control-label">Plaka</label>
+        <input asp-for="CarPlate" class="form-control" />
+        <span asp-validation-for="CarPlate" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Gearbox" class="control-label">Vites Türü</label>
+        <select asp-for="Gearbox" class="form-control">
+            <option value="">Seçiniz</option>
+            <option value="Otomatik">Otomatik</option>
+            <option value="Manuel">Manuel</option>
+        </select>
+        <span asp-validation-for="Gearbox" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="CarStatus" class="control-label">Araç Durumu</label>
+        <select asp-for="CarStatus" class="form-control">
+            <option value="">Seçiniz</option>
+            <option value="Arızalı">Arızalı</option>
+            <option value="Bakımda">Bakımda</option>
+            <option value="Müsait">Müsait</option>
+            <option value="Kullanımda">Kullanımda</option>
+
+
+        </select>
+        <span asp-validation-for="Gearbox" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="YKM" class="control-label">Kilometre</label>
+        <input asp-for="YKM" class="form-control" />
+        <span asp-validation-for="EKM" class="text-danger"></span>
+    </div>
+
+   
+
+    <button type="submit" class="btn btn-primary">Aracı Güncelle</button>
+</form>

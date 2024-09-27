@@ -1,0 +1,101 @@
+@model UserOperations.ViewModels.UserCreateViewModel
+
+
+  <title>Personel Ekle</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .form-container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: #f8f9fa;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .form-group {
+      margin-bottom: 1rem;
+    }
+    .form-group label {
+      font-weight: bold;
+    }
+    h3 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+
+
+  <div class="container mt-5">
+    <div class="form-container">
+      <h3>Personel Ekle</h3>
+      <form asp-action="UserCreate" method="post">
+      
+        <div class="form-group">
+          <label asp-for="UserName">Personel Adı</label>
+          <input asp-for="UserName" type="text" class="form-control" placeholder="Ad" >
+        </div>
+        <div class="form-group">
+          <label asp-for="LastName">Personel Soyadı</label>
+          <input asp-for="LastName" type="text" class="form-control" placeholder="Soyad" >
+        </div>
+        <div class="form-group">
+          <label asp-for="PhoneNumber">Telefon Numarası</label>
+          <input asp-for="PhoneNumber" type="text" class="form-control" placeholder="Telefon Numarası" >
+        </div>
+        <div class="form-group">
+          <label asp-for="EmergencyPhoneNumber">Acil Durum Telefon Numarası</label>
+          <input asp-for="EmergencyPhoneNumber" type="text" class="form-control" placeholder="Acil Durum Bilgisi" >
+        </div>
+        <div class="form-group">
+          <label asp-for="EmergencyContactName">Acil Durum Kişi Adı</label>
+          <input asp-for="EmergencyContactName" type="text" class="form-control" placeholder="Acil Durum Bilgisi">
+        </div>
+        <div class="form-group">
+          <label asp-for="EmailAddress">Mail</label>
+          <input asp-for="EmailAddress" type="email" class="form-control" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label asp-for="Department">Departman</label>
+          <select asp-for="Department" class="form-select">
+            <option></option>
+            <option>İnsan Kaynakları</option>
+            <option>Muhasebe</option>
+            <option>Bilgi İşlem</option>
+            <option>İdari İşler</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label asp-for="Position">Unvan</label>
+          <select asp-for="Position" class="form-select">
+            <option></option>
+            <option>Genel Müdür</option>
+            <option>Müdür</option>
+            <option>Şef</option>
+            <option>Personel</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label asp-for="Salary">Maaş Bilgisi</label>
+          <input asp-for="Salary" type="text" class="form-control" placeholder="Maaş Bilgisi">
+        </div>
+        <div class="form-group">
+          <label asp-for="Address">Adres</label>
+          <input asp-for="Address" class="form-control" placeholder="1234 Main St">
+        </div>
+        <div class="form-group">
+          <label asp-for="Note">Not</label>
+          <input asp-for="Note" class="form-control" placeholder="Not">
+        </div>
+        <div class="form-group">
+          <label asp-for="Password">Password</label>
+          <input asp-for="Password" type="password" class="form-control" placeholder="Password">
+        </div>
+        <div class="card-body">
+        
+        <button type="submit" class="btn btn-primary w-100">Kaydet</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>

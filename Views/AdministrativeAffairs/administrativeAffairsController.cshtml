@@ -1,0 +1,156 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<link href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/fonts/simple-line-icons/style.min.css" rel="stylesheet">
+    <link href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/colors.min.css" rel="stylesheet">
+ 
+  <style>
+    .card-body .media {
+      display: flex;
+      align-items: center;
+    }
+    .card-body .media .align-self-center {
+      margin-right: 15px;
+    }
+    .grey-bg {
+      background-color: #f4f6f9;
+      padding: 2rem 0;
+    }
+    .card {
+      margin-bottom: 1.5rem;
+      border-radius: 10px;
+      transition: transform 0.2s ease-in-out;
+    }
+    .card:hover {
+      text-decoration: none;
+      transform: translateY(-5px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .card-body {
+      padding: 1.5rem;
+    }
+    .card-body .media-body {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+  </style>
+
+<div class="grey-bg container-fluid">
+  <section id="minimal-statistics">
+    <div class="row">
+      <div class="col-12 mt-3 mb-1">
+        <h4 class="text-uppercase">İdari İşler Yönetim Paneli</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xl-4 col-sm-6 col-12"> 
+        <a asp-controller="Announcement" asp-action="AnnouncementCreate" style="text-decoration: none;">
+          <div class="card">
+            <div class="card-content">
+              <div class="card-body">
+                <div class="media d-flex">
+                  <div class="align-self-center">
+                    <i class="icon-pencil primary font-large-2 float-left"></i>
+                  </div>
+                  <div class="media-body text-right">
+                    <span >Yeni Duyuru Ekle</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-xl-4 col-sm-6 col-12"> 
+        <a asp-controller="Request" asp-action="RequestCreate" style="text-decoration: none;">
+          <div class="card">
+            <div class="card-content">
+              <div class="card-body">
+                <div class="media d-flex">
+                  <div class="align-self-center">
+                    <i class="icon-speech warning font-large-2 float-left"></i>
+                  </div>
+                  <div class="media-body text-right">
+                    <span>Talep Oluştur</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-xl-4 col-sm-6 col-12"> 
+        <a asp-controller="Request" asp-action="RequestList" style="text-decoration: none;">
+          <div class="card">
+            <div class="card-content">
+              <div class="card-body">
+                <div class="media d-flex">
+                  <div class="align-self-center">
+                    <i class="icon-speech warning font-large-2 float-left"></i>
+                  </div>
+                  <div class="media-body text-right">
+                    <span>Gelen Talepler</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+@if(User.IsInRole("Admin")){
+    <div class="row">
+      <div class="col-xl-4 col-sm-6 col-12"> 
+        <a asp-controller="AdministrativeAffairs" asp-action="AddACar" style="text-decoration: none;">
+          <div class="card">
+            <div class="card-content">
+              <div class="card-body">
+                <div class="media d-flex">
+                  <div class="align-self-center">
+                     <i class="fas fa-car success font-large-2 float-left"></i>
+                  </div>
+                  <div class="media-body text-right">
+                    <span>Araba Ekleme</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      <div class="col-xl-4 col-sm-6 col-12"> 
+        <a asp-controller="AdministrativeAffairs" asp-action="CarTransactions" style="text-decoration: none;">
+          <div class="card">
+            <div class="card-content">
+              <div class="card-body">
+                <div class="media d-flex">
+                  <div class="align-self-center">
+                    <i class="fas fa-car success font-large-2 float-left"></i>
+
+                  </div>
+                  <div class="media-body text-right">
+                    <span>Araba İşlemleri</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+ 
+
+      
+
+     
+    </div>
+
+  }
+  </section>
+</div>
+
+

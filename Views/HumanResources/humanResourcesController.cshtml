@@ -1,0 +1,175 @@
+
+<link href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/bootstrap-extended.min.css" rel="stylesheet">
+<link href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/fonts/simple-line-icons/style.min.css" rel="stylesheet">
+
+<link href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/colors.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <style>
+    .card-body .media {
+      display: flex;
+      align-items: center;
+    }
+    .card-body .media .align-self-center {
+      margin-right: 15px;
+    }
+    .grey-bg {
+      background-color: #f4f6f9;
+      padding: 2rem 0;
+    }
+    .card {
+      margin-bottom: 1.5rem;
+      border-radius: 10px;
+      transition: transform 0.2s ease-in-out;
+    }
+    .a:hover{
+      text-decoration: none;
+
+    }
+    .card:hover {
+      text-decoration: none;
+      transform: translateY(-5px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .card-body {
+      padding: 1.5rem;
+    }
+    .card-body .media-body {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+  </style>
+
+<div class="grey-bg container-fluid" style="width: 70em; height: 35em;">
+  <section id="minimal-statistics">
+    <div class="row" style="width: 105%;  margin-left: 2%;" >
+      <div class="col-11 mt-6 mb-4" >
+        <h4 class="text-uppercase">İnsan Kaynakları Yönetim Paneli</h4>
+
+    <div class="row" style="margin-top: 4%;">
+      <div class="col-xl-4 col-sm-6 col-12"> 
+      <a asp-controller="Announcement" asp-action="AnnouncementCreate"style="text-decoration: none;">
+          <div class="card">
+            <div class="card-content">
+              <div class="card-body">
+                <div class="media d-flex">
+                  <div class="align-self-center">
+                    <i class="icon-pencil primary font-large-2 float-left"></i>
+                  </div>
+                  <div class="media-body text-right">
+                    <span >Yeni Duyuru Ekle</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-xl-4 col-sm-6 col-12"> 
+        <a asp-controller="Request" asp-action="RequestCreate"style="text-decoration: none;" >
+          <div class="card">
+            <div class="card-content">
+              <div class="card-body">
+                <div class="media d-flex">
+                  <div class="align-self-center">
+                    <i class="icon-speech warning font-large-2 float-left"></i>
+                  </div>
+                  <div class="media-body text-right">
+                    <span>Talep Oluştur</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-xl-4 col-sm-6 col-12"> 
+        <a asp-controller="Request" asp-action="RequestList" style="text-decoration: none;">
+          <div class="card">
+            <div class="card-content">
+              <div class="card-body">
+                <div class="media d-flex">
+                  <div class="align-self-center">
+                    <i class="icon-speech warning font-large-2 float-left"></i>
+                  </div>
+                  <div class="media-body text-right">
+                    <span>Gelen Talepler</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    
+    @if(User.IsInRole("Admin")){
+    <div class="row">
+      <div class="col-xl-4 col-sm-6 col-12"> 
+        <a asp-controller="User" asp-action="UserCreate" style="text-decoration: none;">
+          <div class="card">
+            <div class="card-content">
+              <div class="card-body">
+                <div class="media d-flex">
+                  <div class="media-body text-left">
+                    <span>İşe Alım(Personel Kayıt)</span>
+                  </div>
+                  <div class="align-self-center">
+                    <i class="icon-user danger font-large-2 float-left"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-xl-4 col-sm-6 col-12"> 
+        <a asp-controller="User" asp-action="UserUpdate" style="text-decoration: none;">
+          <div class="card">
+            <div class="card-content">
+              <div class="card-body">
+                <div class="media d-flex">
+                  <div class="media-body text-left">
+                    <span>Personel Güncelle</span>
+                  </div>
+                  <div class="align-self-center">
+                    <i class="icon-user primary font-large-2 float-left"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-xl-4 col-sm-6 col-12"> 
+        <a asp-controller="HumanResources" asp-action="PersonnelExit" style="text-decoration: none;">
+          <div class="card">
+            <div class="card-content">
+              <div class="card-body">
+                <div class="media d-flex">
+                  <div class="media-body text-left">
+                    <span>Personel Çıkış</span>
+                  </div>
+                  <div class="align-self-center">
+                    <i class="icon-user success font-large-2 float-left"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  }
+
+  </div>
+</div>
+
+  </section>
+</div>
+
